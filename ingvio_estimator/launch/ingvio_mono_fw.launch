@@ -1,0 +1,14 @@
+<launch>
+    <arg name="cam_config_path" default = "$(find feature_tracker)/../config/fw_zed2i_f9p/mono_config.yaml" />
+    
+    <node name="mono_tracker" pkg="feature_tracker" type="mono_tracker" output="screen">
+        <param name="config_file" type="string" value="$(arg cam_config_path)" />
+    </node>
+
+    <arg name="ingvio_config_path" default = "$(find ingvio_estimator)/../config/fw_zed2i_f9p/ingvio_mono.yaml" />
+    <node name="ingvio_estimator" pkg="ingvio_estimator" type="ingvio" output="screen">
+        <param name="config_file" type="string" value="$(arg ingvio_config_path)" />
+    </node>
+
+    <node name="visualizer" pkg="rviz" type="rviz" output="screen" args="-d $(find ingvio_estimator)/rviz/ingvio_mono.rviz" />
+</launch>

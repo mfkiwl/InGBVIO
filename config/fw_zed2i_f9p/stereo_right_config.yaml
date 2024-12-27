@@ -1,0 +1,34 @@
+%YAML:1.0
+# config for fw_zed2i_f9p
+
+# intrinsic
+model_type: PINHOLE
+camera_name: cam1
+image_width: 1280
+image_height: 560
+distortion_parameters:
+   k1: -0.01737
+   k2: 0.04380
+   p1: 0.00287
+   p2: 0.00124
+projection_parameters:
+   fx: 811.826
+   fy: 807.520
+   cx: 622.656
+   cy: 261.046
+
+# extrinsic
+extrinsicRotation: !!opencv-matrix        # R^{imu}_{cam}
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ -0.01036,-0.01075,0.99990,
+          -0.99994,-0.00178,-0.01038,
+          0.00189,-0.99994,-0.01073]
+extrinsicTranslation: !!opencv-matrix     # t^{imu}_{cam}
+   rows: 3
+   cols: 1
+   dt: d
+   data: [1.70544, -0.22770, -0.11611]
+   
+
