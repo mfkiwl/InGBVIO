@@ -1,5 +1,5 @@
 # InGBVIO
-An invariant filter based GNSS-Barometer-Visual-Inertial Odemetry
+A tightly coupled and invariant GNSS-Barometer-Visual-Inertial Odometry
 
 update on 01-07-2025
 
