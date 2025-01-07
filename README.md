@@ -32,7 +32,7 @@ We use [SuiteSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse/releases
 
 A wrapper for GNSS messages in ROS. See [gnss_comm](https://github.com/HKUST-Aerial-Robotics/gnss_comm). The fantastic optimization-based work [GVINS](https://github.com/HKUST-Aerial-Robotics/GVINS) also relies on this library. We reserve a copy of gnss_comm in this repo.
 
-### 1.6  trp_sen_msg library
+### 1.6  irp_sen_msg library
 
 A Ros message library for Kaist Urban dataset. Clone this [msg package](https://github.com/tsyxyz/irp_sen_msgs) to the src folder of catkin_ws.
 
