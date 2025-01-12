@@ -16,11 +16,11 @@ The compiler should at least support c++14 standards.
 
 ### 1.2  ROS-Noetic System
 
-InGVIO is developed under [ROS-Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu).
+InGBVIO is developed under [ROS-Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
 ### 1.3  Eigen Library
 
-InGVIO is developed under [Eigen3.3.7](https://eigen.tuxfamily.org/index.php?title=Main_Page).
+InGBVIO is developed under [Eigen3.3.7](https://eigen.tuxfamily.org/index.php?title=Main_Page).
 
 ### 1.4  SuiteSparse Library
 
